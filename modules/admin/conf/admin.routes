@@ -1,0 +1,4 @@
+GET     /                           controllers.admin.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET /public/*file                   controllers.admin.Assets.versioned(path="/public/lib/admin", file: Asset)

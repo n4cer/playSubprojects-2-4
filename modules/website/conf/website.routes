@@ -1,0 +1,10 @@
+
+# WEB Routes
+# This file defines WEB application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.website.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET /public/*file                   controllers.website.Assets.versioned(path="/public/lib/website", file: Asset)
