@@ -26,3 +26,5 @@ EclipseKeys.preTasks := Seq(compile in Compile)
 EclipseKeys.skipParents in ThisBuild := false
 
 routesGenerator := InjectedRoutesGenerator
+
+Keys.javaOptions+="-Dconfig.file=conf/application.conf"
